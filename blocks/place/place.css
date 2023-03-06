@@ -22,10 +22,6 @@
     grid-template-columns: 340px 1fr;
     margin-bottom: 72px;
   }
-
-  .place:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (max-width: 767px) {

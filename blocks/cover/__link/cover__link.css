@@ -1,5 +1,7 @@
 .cover__link {
+  position: relative;
   margin: 0 auto;
+  padding: 0;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -7,16 +9,24 @@
   text-align: center;
   width: 100%;
   min-height: 740px;
-  background-image: url(../../../images/railwaystation.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
 }
 
-.cover__link:hover {
-  opacity: .7;
-  cursor: pointer;
+.cover__link::after {
+  content: '';
+  position: absolute;
+  background: #2A2C2F;
+  opacity: .3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity .3s ease-in-out;
+}
+
+.cover__link:hover::after {
+  opacity: .8;
 }
 
 @media screen and (max-width: 1279px) {

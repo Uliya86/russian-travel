@@ -1,14 +1,15 @@
 .cover {
-  margin: 0 auto;
-  margin-top: 92px;
-  padding: 0 48px;
+  margin: 92px auto 0;
   max-width: 1184px;
+  background-image: url(../../images/railwaystation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (max-width: 1279px) {
   .cover {
     max-width: 1024px;
-    padding: 0;
   }
 }
 

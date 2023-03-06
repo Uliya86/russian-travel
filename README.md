@@ -15,3 +15,5 @@
 
 ## Инструкция
 Для просмотра откройте index.html через любой удобный браузер.
+
+[Ссылка на GitHub Pages](https://uliya86.github.io/russian-travel/index.html)
